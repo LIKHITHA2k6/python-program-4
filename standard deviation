@@ -1,0 +1,20 @@
+[]import math
+L =[]
+n = int(input("Enter the element:"))
+
+for i in range (n):
+val = int(input("Enter the element:"))
+L.append(val)
+
+print("The length of list 1 is ',len(L))
+print('List contents',L)
+mean = sum(L)/n
+total = 0
+for elem in L:
+  total+ = (elem-mean)**2
+  variance = total/n
+  staddev = math .sqrt(variance)
+
+print("Mean = ",mean)
+print("Variance = ",variance)
+print("Standard Deviation = ",staddev)
